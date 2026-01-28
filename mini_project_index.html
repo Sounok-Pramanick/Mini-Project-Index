@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Mini Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+
+    p.subtitle {
+      text-align: center;
+      opacity: 0.85;
+      margin-bottom: 40px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 25px;
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: #fff;
+      font-weight: bold;
+      transition: opacity 0.3s ease;
+      margin: 5px;
+    }
+
+    .github {
+      background: linear-gradient(to right, #333, #555);
+    }
+
+    .card a:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Mini Project Portfolio</h1>
+    <p class="subtitle">Simple games & utilities built with web technologies</p>
+
+    <div class="projects">
+      <div class="card">
+        <h2>Stone Paper Scissors</h2>
+        <p>A classic game where you play against the computer using simple game logic.</p>
+        <a href="https://your-stone-paper-scissors-link" target="_blank">Live Project</a>
+        <a class="github" href="https://github.com/your-username/stone-paper-scissors" target="_blank">GitHub Code</a>
+      </div>
+
+      <div class="card">
+        <h2>Tic Tac Toe</h2>
+        <p>A two-player Tic Tac Toe game designed for local multiplayer.</p>
+        <a href="https://your-tic-tac-toe-link" target="_blank">Live Project</a>
+        <a class="github" href="https://github.com/your-username/tic-tac-toe" target="_blank">GitHub Code</a>
+      </div>
+
+      <div class="card">
+        <h2>Currency Converter</h2>
+        <p>Convert currencies using real-time exchange rates.</p>
+        <a href="https://your-currency-converter-link" target="_blank">Live Project</a>
+        <a class="github" href="https://github.com/your-username/currency-converter" target="_blank">GitHub Code</a>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 | Built by Me
+    </footer>
+  </div>
+</body>
+</html>
